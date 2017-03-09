@@ -1,0 +1,7 @@
+<%= form_tag(login_path, method: 'post') do %>
+<div>Name:<%= text_field_tag :name %><div>
+<div>Password: <%= password_field_tag :password %><div>
+<div><%= submit_tag 'Login' %><div>
+<% end %>
+
+<%= button_to 'Signup', signup_path, method: :get%>
